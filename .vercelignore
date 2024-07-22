@@ -1,0 +1,15 @@
+# Exclure les fichiers vidéo
+*.mp4
+*.mov
+
+# Exclure les répertoires de dépendances
+node_modules
+vendor
+
+# Exclure les fichiers temporaires
+*.log
+*.tmp
+
+# Exclure d'autres répertoires volumineux
+/public/videos
+/public/large_files
