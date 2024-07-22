@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Réservation - Zoo d'Arcadie</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+
+  <header>
+    <div class="logo">
+      <p id="logo"><img src="./images/logo.png" alt="Zoo d'Arcadie">ZOO D'ARCADIA</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Maison</a></li>
+        <li><a href="./servive.html" class="current-page">Services</a></li>
+        <li><a href="./habitat.html">Habitats</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./connexion.html">Connexion</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+  <main>
+    <section class="reservation-hero">
+      <div class="reservation-hero-text">
+        <h1>Réservez votre visite et services</h1>
+        <p>Planifiez votre visite au Zoo d'Arcadie en réservant vos billets et services à l'avance.</p>
+      </div>
+      <img src="./images/reservation.jpg" alt="Réservation" class="reservation-hero-image">
+    </section>
+
+    <section class="reservation-form-section">
+      <h2>Formulaire de Réservation</h2>
+      <form class="reservation-form">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="date">Date de visite :</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Heure de visite :</label>
+        <input type="time" id="time" name="time" required>
+
+        <label for="guests">Nombre de visiteurs :</label>
+        <input type="number" id="guests" name="guests" min="1" required>
+
+        <label for="services">Services :</label>
+        <div class="services-checkboxes">
+          <label><input type="checkbox" name="services" value="visite-guidee"> Visite guidée</label>
+          <label><input type="checkbox" name="services" value="restauration"> Restauration</label>
+          <label><input type="checkbox" name="services" value="atelier-educatif"> Atelier éducatif</label>
+          <label><input type="checkbox" name="services" value="spectacle-animalier"> Spectacle animalier</label>
+        </div>
+
+        <button type="submit">Réservez maintenant</button>
+        <a href="./servive.html" class="back-button">Retour à la page de services</a>
+      </form>
+    </section>
+  </main>
+
+
+  
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <p id="logofooter"><img src="./images/logo.png" alt="Zoo D'Arcadia" class="footer-logo">ZOO D'ARCADIA</p>
+        <p>&copy; 2024 Zoo d'Arcadie. Dédié au soin des animaux et à la conscience écologique.</p>
+      </div>
+      <div class="footer-section">
+        <h3>LIENS RAPIDES</h3>
+        <ul>
+          <li><a href="./index.html">Maison</a></li>
+          <li><a href="./servive.html" >Services</a></li>
+          <li><a href="./habitat.html">Habitats</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./connexion.html">Connexion</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>CONNECTER</h3>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Youtube</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-bottom">&copy; Zoo d'Arcadie © 2024</p>
+  </footer>
+
+  <script src="./js/scripts.js"></script>
+</body>
+</html>

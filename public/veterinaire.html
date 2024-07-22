@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vétérinaire - Zoo d'Arcadie</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <p id="logo"><img src="./images/logo.png" alt="Zoo d'Arcadie">ZOO D'ARCADIA</p>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="./index.html">Maison</a></li>
+      <li><a href="./servive.html">Services</a></li>
+      <li class="dropdown">
+        <a href="./habitat.html" >Habitats</a>
+        <ul class="dropdown-content">
+          <li><a href="savane.html">Savane</a></li>
+          <li><a href="marais.html">Marais</a></li>
+          <li><a href="ocean.html">Océan</a></li>
+        </ul>
+      </li>
+      <li><a href="./contact.html">Contact</a></li>
+      <li><a href="./connexion.html" class="current-page">Connexion</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="veterinaire-hero">
+    <div class="veterinaire-hero-text">
+      <h1>Bienvenue, Vétérinaire</h1>
+      <p>Gérez les rapports de santé des animaux, commentez sur les habitats et consultez l'alimentation des animaux.</p>
+    </div>
+    <img src="./images/veterinaire.jpg" alt="Vétérinaire" class="veterinaire-hero-image">
+  </section>
+
+  <section class="info-sections">
+    <div class="info-item">
+      <img src="./images/veterinaire.jpg" alt="Vétérinaire">
+      <div class="info-text">
+        <h3>Rapports de Santé</h3>
+        <form class="rapport-sante-form" action="submit_report.php" method="post">
+          <label for="animal">Sélectionner un animal :</label>
+          <select id="animal" name="animal" required>
+            <option value="simba">Simba (Lion)</option>
+            <option value="dumbo">Dumbo (Éléphant)</option>
+            <option value="geraldine">Geraldine (Girafe)</option>
+            <option value="marty">Marty (Zèbre)</option>
+            <option value="flash">Flash (Guépard)</option>
+            <option value="shenzi">Shenzi (Hyène)</option>
+            <option value="rocko">Rocko (Rhinocéros)</option>
+            <option value="speedy">Speedy (Autruche)</option>
+            <option value="gazzy">Gazzy (Gazelle)</option>
+            <option value="bison">Bison (Buffle)</option>
+            <!-- Ajouter d'autres animaux ici -->
+          </select>
+          <label for="etat">État de l'animal :</label>
+          <input type="text" id="etat" name="etat" required>
+          
+          <label for="nourriture">Nourriture proposée :</label>
+          <input type="text" id="nourriture" name="nourriture" required>
+          
+          <label for="grammage">Grammage de la nourriture :</label>
+          <input type="text" id="grammage" name="grammage" required>
+          
+          <label for="date">Date de passage :</label>
+          <input type="date" id="date" name="date" required>
+          
+          <label for="details">Détails de l'état de l'animal (facultatif) :</label>
+          <textarea id="details" name="details"></textarea>
+          
+          <button type="submit">Soumettre le rapport</button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="info-item">
+      <img src="./images/habitats.jpg" alt="Habitat">
+      <div class="info-text">
+        <h3>Commentaires sur les Habitats</h3>
+        <form class="commentaire-habitat-form" action="submit_comment.php" method="post">
+          <label for="habitat">Sélectionner un habitat :</label>
+          <select id="habitat" name="habitat" required>
+            <option value="savane">Savane</option>
+            <option value="marais">Marais</option>
+            <option value="ocean">Océan</option>
+          </select>
+          <label for="commentaire">Commentaire :</label>
+          <textarea id="commentaire" name="commentaire" required></textarea>
+          <button type="submit">Soumettre le commentaire</button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="info-item">
+      <img src="./images/alimentation.jpg" alt="Alimentation">
+      <div class="info-text">
+        <h3>Alimentation des Animaux</h3>
+        <p>Consultez ce que chaque animal a mangé.</p>
+        <ul>
+          <li>Simba (Lion) : 5kg de viande (10/07/2024)</li>
+          <li>Dumbo (Éléphant) : 50kg de fruits (10/07/2024)</li>
+          <li>Geraldine (Girafe) : 30kg de feuilles (10/07/2024)</li>
+          <!-- Ajouter plus d'informations ici -->
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-section">
+      <p id="logofooter"><img src="./images/logo.png" alt="Zoo D'Arcadia" class="footer-logo">ZOO D'ARCADIA</p>
+      <p>&copy; 2024 Zoo d'Arcadie. Dédié au soin des animaux et à la conscience écologique.</p>
+    </div>
+    <div class="footer-section">
+      <h3>LIENS RAPIDES</h3>
+      <ul>
+        <li><a href="./index.html">Maison</a></li>
+        <li><a href="./servive.html">Services</a></li>
+        <li><a href="./habitat.html">Habitats</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./connexion.html">Connexion</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>CONNECTER</h3>
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Youtube</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="footer-bottom">&copy; Zoo d'Arcadie © 2024</p>
+</footer>
+
+<script src="./js/scripts.js"></script>
+</body>
+</html>

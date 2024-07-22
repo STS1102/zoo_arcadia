@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Zoo d'Arcadie</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+
+  <header>
+    <div class="logo">
+      <p id="logo"><img src="./images/logo.png" alt="Zoo d'Arcadie">ZOO D'ARCADIA</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Maison</a></li>
+        <li><a href="./servive.html">Services</a></li>
+        <li><a href="./habitat.html">Habitats</a></li>
+        <li><a href="./contact.html" class="current-page">Contact</a></li>
+        <li><a href="./connexion.html">Connexion</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+  <main>
+    <section class="contact-hero">
+      <div class="contact-hero-text">
+        <h1>Contactez-nous</h1>
+        <p>Nous sommes là pour répondre à vos questions et écouter vos suggestions.</p>
+      </div>
+      <img src="./images/contact.jpg" alt="Contact" class="contact-hero-image">
+    </section>
+
+    <section class="contact-form-section">
+      <h2>Formulaire de Contact</h2>
+      <form class="contact-form" action="mailto:info@arcadiazoo.com" method="post" enctype="text/plain">
+        <label for="title">Titre :</label>
+        <input type="text" id="title" name="title" required>
+
+        <label for="description">Description :</label>
+        <textarea id="description" name="description" rows="5" required></textarea>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+
+
+    <section class="contacts">
+      
+      <h2>Contacts :</h2>
+      <div class="contacts-container">
+        <div class="contact-item" id="phone-contact">
+          <img src="./images/tel logo.jpg" alt="Téléphone" class="icon">
+          <div class="contact-text">
+            <p><strong>Tel :</strong></p>
+            <p>123-456-7890</p>
+          </div>
+        </div>
+        <div class="contact-item" id="address-contact">
+          <img src="./images/adresse logo.jpg" alt="Adresse" class="icon">
+          <div class="contact-text">
+            <p><strong>Adresse :</strong></p>
+            <p>123 chemin des Forêts, Brocéliande, France</p>
+          </div>
+        </div>
+        <div class="contact-item" id="email-contact">
+          <img src="./images/logo mail.jpg" alt="Email" class="icon">
+          <div class="contact-text">
+            <p><strong>Email :</strong></p>
+            <p>info@arcadiazoo.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.948104087263!2d-73.9934390845924!3d40.73082397932813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zTWFuaGF0dGFu!5e0!3m2!1sen!2sus!4v1603325076963!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+      
+    </section>
+  </main>
+
+
+  
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <p id="logofooter"><img src="./images/logo.png" alt="Zoo D'Arcadia" class="footer-logo">ZOO D'ARCADIA</p>
+        <p>&copy; 2024 Zoo d'Arcadie. Dédié au soin des animaux et à la conscience écologique.</p>
+      </div>
+      <div class="footer-section">
+        <h3>LIENS RAPIDES</h3>
+        <ul>
+          <li><a href="./index.html">Maison</a></li>
+          <li><a href="./servive.html">Services</a></li>
+          <li><a href="./habitat.html">Habitats</a></li>
+          <li><a href="./contact.html" class="current-page">Contact</a></li>
+          <li><a href="./connexion.html">Connexion</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>CONNECTER</h3>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Youtube</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-bottom">&copy; Zoo d'Arcadie © 2024</p>
+  </footer>
+
+  <script src="./js/scripts.js"></script>
+</body>
+</html>

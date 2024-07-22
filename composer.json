@@ -1,0 +1,7 @@
+{
+    "name": "zoo_arcadia",
+    "description": "Zoo d'Arcadia Web Application",
+    "require": {
+      "php": "^7.4|^8.0"
+    }
+  }

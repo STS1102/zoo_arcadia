@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connexion - Zoo d'Arcadie</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <p id="logo"><img src="./images/logo.png" alt="Zoo d'Arcadie">ZOO D'ARCADIA</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Maison</a></li>
+        <li><a href="./servive.html">Services</a></li>
+        <li><a href="./habitat.html">Habitats</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./connexion.html" class="current-page">Connexion</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="connexion-hero">
+      <div class="connexion-hero-text">
+        <h1>Connexion</h1>
+        <p>Veuillez vous connecter pour accéder à votre compte.</p>
+      </div>
+      <img src="./images/connexion.jpg" alt="Connexion" class="connexion-hero-image">
+    </section>
+
+    <section class="connexion-form-section">
+      <h2>Formulaire de Connexion</h2>
+      <form class="connexion-form" method="post" action="login.php">
+
+        <label for="role">Vous êtes :</label>
+        <select id="role" name="role" required>
+          <option value="veterinarian">Vétérinaire</option>
+          <option value="employee">Employé</option>
+          <option value="admin">Administrateur</option>
+        </select>
+
+        <label for="username">Nom d'utilisateur :</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Connexion</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <p id="logofooter"><img src="./images/logo.png" alt="Zoo D'Arcadia" class="footer-logo">ZOO D'ARCADIA</p>
+        <p>&copy; 2024 Zoo d'Arcadie. Dédié au soin des animaux et à la conscience écologique.</p>
+      </div>
+      <div class="footer-section">
+        <h3>LIENS RAPIDES</h3>
+        <ul>
+          <li><a href="./index.html">Maison</a></li>
+          <li><a href="./servive.html">Services</a></li>
+          <li><a href="./habitat.html">Habitats</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./connexion.html">Connexion</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>CONNECTER</h3>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Youtube</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-bottom">&copy; Zoo d'Arcadie © 2024</p>
+  </footer>
+
+  <script src="./js/scripts.js"></script>
+</body>
+</html>

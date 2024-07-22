@@ -1,0 +1,1324 @@
+/************************************************************** CSS - ACCEUIL *******************************************************************/
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #000;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo img {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+nav ul li .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000;
+  min-width: 160px;
+  z-index: 1;
+}
+
+nav ul li .dropdown-content a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+nav ul li .dropdown-content a:hover {
+  background-color: #555;
+}
+
+nav ul li:hover .dropdown-content {
+  display: block;
+}
+
+nav ul li a.current-page {
+  font-weight: bold;
+  border-bottom: 2px solid #00b300;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.hero .hero-video {
+  width: 100%;
+  height: auto;
+  max-height: 90vh;
+  object-fit: cover;
+}
+
+.hero .hero-text button {
+  background-color: #20ad20;
+  border: none;
+  padding: 15px 30px;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.hero .hero-text button:hover {
+  background-color: #009900;
+}
+
+.testimonials, .services, .habitats, .conservation {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+}
+
+.testimonials h2 {
+  font-size: 1.5em;
+  margin-bottom: 50px;
+}
+
+.testimonials-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.testimonial {
+  flex: 1 1 calc(33% - 40px);
+  max-width: calc(33% - 40px);
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.testimonial p {
+  margin-bottom: auto;
+}
+
+.avis {
+  color: #b8ababdc;
+}
+
+.info-sections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  padding: 50px 20px;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 50px;
+  width: 80%;
+}
+
+.info-item img {
+  width: 200px;
+  height: 150px;
+  border-radius: 15%;
+  object-fit: cover;
+  margin-right: 30px;
+}
+
+.info-text {
+  max-width: 600px;
+}
+
+.info-text h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #00b300;
+}
+
+.info-text p {
+  margin: 0;
+  color: #b8ababdc;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.dynamic-content {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.dynamic-content h2 {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.dynamic-videos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 200px;
+}
+
+
+.review-form-section {
+  background-color: #000;
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.review-form-section h2 {
+  margin-bottom: 20px;
+}
+
+.review-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.review-form label {
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.review-form input,
+.review-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.review-form button {
+  background-color: #20ad20;
+  border: none;
+  padding: 15px;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.review-form button:hover {
+  background-color: #009900;
+}
+
+
+/************************************************************** CSS - SERVICES *******************************************************************/
+
+.services-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3e4a59; 
+  color: #fff;
+  padding: 50px 20px;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.services-hero-text {
+  max-width: 50%;
+}
+
+.services-hero-text .highlight {
+  color: #00b300; 
+}
+
+.services-hero h1 {
+  font-size: 2.5em;
+  margin-top: 10px;
+}
+
+.services-hero-image {
+  max-width: 45%;
+  border-radius: 10px;
+}
+
+.services-details {
+  background-color: #000;
+  color: #fff;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+  width: 90%; 
+}
+
+.services-item img {
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-right: 100px;
+}
+
+.services-item-text h2 {
+  color: #00b300; 
+  margin: 0 200px 0 50px;
+  font-size: 30px;
+}
+
+.services-item-text p {
+  margin: 10px 200px 0 50px;
+  font-size: 20px;
+  color: #b8ababdc;;
+}
+
+
+.services-hero .services-hero-text button {
+  background-color: #20ad20;
+  border: none;
+  padding: 15px 30px;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.services-hero .services-hero-text button:hover {
+  background-color: #009900;
+}
+
+/************************************************************** CSS - HABITAT *******************************************************************/
+
+.habitat-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5b1a6e; 
+  color: #fff;
+  padding: 50px 20px;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.habitat-hero-text {
+  max-width: 50%;
+}
+
+.habitat-hero-text .highlight {
+  color: #00b300; 
+}
+
+.habitat-hero h1 {
+  font-size: 2.5em;
+  margin-top: 10px;
+}
+
+.habitat-hero-image {
+  max-width: 45%;
+  border-radius: 10px;
+}
+
+
+.habitats-details {
+  background-color: #000;
+  color: #fff;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.habitats-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  width: 80%; 
+}
+
+.habitats-item img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.habitats-item-text h2 {
+  color: #00b300;
+}
+
+.habitats-item-text p {
+  margin: 10px 0 0 0;
+}
+
+
+
+
+/************************************************************** CSS - RESERVATION *******************************************************************/
+
+.reservation-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5a9;
+  color: #fff;
+  padding: 50px 20px;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.reservation-hero-text {
+  max-width: 50%;
+}
+
+.reservation-hero h1 {
+  font-size: 2.5em;
+  margin-top: 10px;
+}
+
+.reservation-hero-image {
+  max-width: 45%;
+  border-radius: 10px;
+}
+
+/* Section formulaire de réservation */
+.reservation-form-section {
+  background-color: #000;
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.reservation-form-section h2 {
+  margin-bottom: 20px;
+}
+
+.reservation-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.reservation-form label {
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.reservation-form input, .reservation-form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.reservation-form .services-checkboxes {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.services-checkboxes label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.reservation-form button {
+  background-color: #20ad20;
+  border: none;
+  padding: 15px;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.reservation-form button:hover {
+  background-color: #009900;
+}
+
+
+.back-button {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #555;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0,5em;
+}
+
+.back-button:hover {
+  background-color: #333;
+}
+
+
+/************************************************************** CSS - CONNEXION *******************************************************************/
+
+.connexion-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(165, 96, 96);
+  color: #fff;
+  padding: 50px 20px;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.connexion-hero-text {
+  max-width: 50%;
+}
+
+.connexion-hero h1 {
+  font-size: 2.5em;
+  margin-top: 10px;
+}
+
+.connexion-hero-image {
+  max-width: 45%;
+  border-radius: 10px;
+}
+
+/* Section formulaire de connexion */
+.connexion-form-section {
+  background-color: #000;
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.connexion-form-section h2 {
+  margin-bottom: 20px;
+}
+
+.connexion-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.connexion-form label {
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.connexion-form input, .connexion-form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.connexion-form button {
+  background-color: #20ad20;
+  border: none;
+  padding: 15px;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.connexion-form button:hover {
+  background-color: #009900;
+}
+
+/************************************************************** CSS - CONTACT *******************************************************************/
+
+.contact-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5a9;
+  color: #fff;
+  padding: 50px 20px;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.contact-hero-text {
+  max-width: 50%;
+}
+
+.contact-hero h1 {
+  font-size: 2.5em;
+  margin-top: 10px;
+}
+
+.contact-hero-image {
+  max-width: 45%;
+  border-radius: 10px;
+}
+
+/* Section formulaire de contact */
+.contact-form-section {
+  background-color: #000;
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact-form-section h2 {
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form label {
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.contact-form button {
+  background-color: #20ad20;
+  border: none;
+  padding: 15px;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.contact-form button:hover {
+  background-color: #009900;
+}
+
+/* Section des informations de contact */
+.contact-info-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px 20px;
+  background-color: #000;
+  color: #fff;
+}
+
+.contact-map iframe{
+  border-radius: 15px;
+  width: 70%;
+  height: 70%;
+  margin-top: 10%;
+}
+
+
+
+
+.contact-info {
+  color: #fff;
+  align-items: center;
+  }
+  
+  .contact-info h2 {
+    align-items: center;
+    }
+  
+  
+    .contacts {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 50px 20px;
+    }
+    
+    .contacts h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    
+    .contacts-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      gap: 20px;
+    }
+    
+    .contact-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 200px;
+      cursor: pointer;
+    }
+    
+    .icon {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 10px;
+    }
+    
+    .contact-text {
+      text-align: center;
+    }
+    
+    .contact-text p {
+      margin: 5px 0;
+    }
+
+/************************************************************** CSS - FOOTER *******************************************************************/
+  footer {
+    color: #b8ababdc;
+    padding: 50px 0;
+    text-align: left;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    max-width: 200px;
+    margin: 10px;
+  }
+  
+  .footer-logo {
+    width: 50px;
+    height: auto;
+  }
+  
+  .footer-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin: 5px 0;
+  }
+  
+  .footer-section ul li a {
+    color: #b8ababdc;
+    text-decoration: none;
+  }
+  
+  .footer-section ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  #logofooter {
+    color: #fff;
+    align-items: center;
+  }
+  
+
+
+  
+/************************************************************** CSS - Savane *******************************************************************/
+
+
+.savane-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(84, 221, 118);
+  color: #fff;
+  padding: 50px 20px;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.savane-hero-text {
+  max-width: 50%;
+}
+
+.savane-hero h1 {
+  font-size: 2.5em;
+  margin-top: 10px;
+}
+
+.savane-hero p {
+  font-size: 1.1em;
+}
+
+.savane-hero .savane-hero-video {
+  max-width: 45%;
+  border-radius: 10px;
+}
+
+
+
+
+.savane-details {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.savane-item {
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: rgb(84, 221, 118);
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.959);
+  width: 350px; 
+}
+
+.savane-item video {
+  width: 100%;
+  height: auto;
+}
+
+.savane-item-text {
+  padding: 15px;
+}
+
+.savane-item-text h2, .savane-item-text h3, .savane-item-text h4 {
+  margin: 10px 0;
+}
+
+
+/************************************************************** CSS - Marais *******************************************************************/
+
+.marais-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(36, 47, 145);
+  color: #fff;
+  padding: 50px 20px;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.marais-hero-text {
+  max-width: 50%;
+}
+
+.marais-hero h1 {
+  font-size: 2.5em;
+  margin-top: 10px;
+}
+.marais-hero p {
+  font-size: 1.5em;
+}
+
+.marais-hero .marais-hero-video {
+  max-width: 45%;
+  border-radius: 10px;
+}
+
+
+
+
+.marais-details {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.marais-item {
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: rgb(36, 47, 145);
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.959);
+  width: 350px; 
+}
+
+.marais-item video {
+  width: 100%;
+  height: auto;
+}
+
+.marais-item-text {
+  padding: 15px;
+}
+
+.marais-item-text h2, .marais-item-text h3, .marais-item-text h4 {
+  margin: 10px 0;
+  color: #fff;
+}
+
+.marais-item-text p {
+color: #fff;
+}
+
+/************************************************************** CSS - Ocean *******************************************************************/
+
+.ocean-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(211, 59, 153);
+  color: #fff;
+  padding: 50px 20px;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.ocean-hero-text {
+  max-width: 50%;
+}
+
+.ocean-hero h1 {
+  font-size: 2.5em;
+  margin-top: 10px;
+}
+
+.ocean-hero p {
+  font-size: 1.5em;
+}
+.ocean-hero .ocean-hero-video {
+  max-width: 45%;
+  border-radius: 10px;
+}
+
+
+
+.ocean-details {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.ocean-item {
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: rgb(211, 59, 153);
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.959);
+  width: 350px; 
+}
+
+.ocean-item video {
+  width: 100%;
+  height: auto;
+}
+
+.ocean-item-text {
+  padding: 15px;
+}
+
+.ocean-item-text h2, .ocean-item-text h3, .ocean-item-text h4 {
+  margin: 10px 0;
+  color: #fff;
+}
+
+.ocean-item-text p {
+color: #fff;
+}
+
+
+
+
+/************************************************************** CSS - VÉTÉRINAIRE *******************************************************************/
+
+.veterinaire-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(165, 96, 96);
+  color: #fff;
+  padding: 50px 20px;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.veterinaire-hero-text {
+  max-width: 50%;
+}
+
+.veterinaire-hero h1 {
+  font-size: 2.5em;
+  margin-top: 10px;
+}
+
+.veterinaire-hero-image {
+  max-width: 45%;
+  border-radius: 10px;
+}
+
+/* Section formulaire de rapport de santé */
+.rapport-sante-form, .commentaire-habitat-form {
+  background-color: #000;
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.rapport-sante-form h2, .commentaire-habitat-form h2 {
+  margin-bottom: 20px;
+}
+
+.rapport-sante-form select, .commentaire-habitat-form select,
+.rapport-sante-form input, .rapport-sante-form textarea,
+.commentaire-habitat-form input, .commentaire-habitat-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #222;
+  color: #fff;
+}
+
+.rapport-sante-form button, .commentaire-habitat-form button {
+  background-color: #20ad20;
+  border: none;
+  padding: 15px;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.rapport-sante-form button:hover, .commentaire-habitat-form button:hover {
+  background-color: #009900;
+}
+
+/* Section des informations */
+.info-sections {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 50px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.info-item img {
+  width: 200px;
+  height: 150px;
+  border-radius: 15%;
+  object-fit: cover;
+  margin-right: 30px;
+}
+
+.info-text {
+  max-width: 600px;
+  text-align: left;
+}
+
+.info-text h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #00b300;
+}
+
+.info-text p {
+  margin: 0;
+  color: #b8ababdc;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.info-text ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info-text ul li {
+  margin-bottom: 10px;
+}
+
+/************************************************************** CSS - ADMINISTRATEUR *******************************************************************/
+
+.administrateur-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1E90FF;
+  color: #fff;
+  padding: 50px 20px;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.administrateur-hero-text {
+  max-width: 50%;
+}
+
+.administrateur-hero h1 {
+  font-size: 2.5em;
+  margin-top: 10px;
+}
+
+.administrateur-hero-image {
+  max-width: 45%;
+  border-radius: 10px;
+}
+
+/* Section des informations */
+.info-sections {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 50px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.info-item img {
+  width: 200px;
+  height: 150px;
+  border-radius: 15%;
+  object-fit: cover;
+  margin-right: 30px;
+}
+
+.info-text {
+  max-width: 600px;
+  text-align: left;
+}
+
+.info-text h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #00b300;
+}
+
+.info-text p {
+  margin: 0;
+  color: #b8ababdc;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.info-text ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info-text ul li {
+  margin-bottom: 10px;
+}
+
+.create-account-form, .filter-reports-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.create-account-form label, .filter-reports-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.create-account-form input,
+.create-account-form select,
+.create-account-form button,
+.filter-reports-form input,
+.filter-reports-form select,
+.filter-reports-form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.create-account-form button,
+.filter-reports-form button {
+  background-color: #1E90FF;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.create-account-form button:hover,
+.filter-reports-form button:hover {
+  background-color: #1C86EE;
+}
+
+/************************************************************** CSS - EMPLOYÉ *******************************************************************/
+
+.employe-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #32CD32;
+  color: #fff;
+  padding: 50px 20px;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.employe-hero-text {
+  max-width: 50%;
+}
+
+.employe-hero h1 {
+  font-size: 2.5em;
+  margin-top: 10px;
+}
+
+.employe-hero-image {
+  max-width: 45%;
+  border-radius: 10px;
+}
+
+/* Section des informations */
+.info-sections {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 50px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.info-item img {
+  width: 200px;
+  height: 150px;
+  border-radius: 15%;
+  object-fit: cover;
+  margin-right: 30px;
+}
+
+.info-text {
+  max-width: 600px;
+  text-align: left;
+}
+
+.info-text h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #00b300;
+}
+
+.info-text p {
+  margin: 0;
+  color: #b8ababdc;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.info-text ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info-text ul li {
+  margin-bottom: 10px;
+}
+
+.alimentation-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.alimentation-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.alimentation-form input,
+.alimentation-form select,
+.alimentation-form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.alimentation-form button {
+  background-color: #32CD32;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.alimentation-form button:hover {
+  background-color: #28a745;
+}
