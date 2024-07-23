@@ -13,3 +13,6 @@ vendor
 # Exclure d'autres répertoires volumineux
 /public/videos
 /public/large_files
+
+node_modules
+.env
