@@ -1,5 +1,5 @@
 {
-  "name": " zoo_arcadia ",
+  "name": "zoo_arcadia",
   "description": "Zoo Arcadia Project",
   "require": {
     "php": "^7.4 || ^8.0"
