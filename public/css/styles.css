@@ -81,10 +81,10 @@ nav ul li a.current-page {
   z-index: 1;
 }
 
-.hero .hero-video {
+.hero .hero-image {
   width: 100%;
   height: auto;
-  max-height: 90vh;
+  max-height: 100vh;
   object-fit: cover;
 }
 
@@ -178,25 +178,6 @@ nav ul li a.current-page {
   line-height: 1.6;
 }
 
-.dynamic-content {
-  padding: 50px 20px;
-  text-align: center;
-}
-
-.dynamic-content h2 {
-  font-size: 1.5em;
-  margin-bottom: 30px;
-  color: #fff;
-}
-
-.dynamic-videos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 200px;
-}
-
-
 .review-form-section {
   background-color: #000;
   color: #fff;
@@ -240,6 +221,78 @@ nav ul li a.current-page {
 }
 
 .review-form button:hover {
+  background-color: #009900;
+}
+
+
+.dynamic-content {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.dynamic-content h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.dynamic-animals {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.animal-card {
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: none;
+}
+
+.animal-card[data-visible="true"] {
+  display: block;
+}
+
+
+.animal-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.animal-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.animal-card h3 {
+  margin-top: 10px;
+  font-size: 1.5em;
+}
+
+.animal-card p {
+  font-size: 1em;
+  color: #333;
+}
+
+.load-more {
+  background-color: #20ad20;
+  border: none;
+  padding: 15px 30px;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.load-more:hover {
   background-color: #009900;
 }
 
@@ -825,10 +878,9 @@ nav ul li a.current-page {
   width: 350px; 
 }
 
-
-.savane-item video {
-  width: 100%;
-  height: auto;
+.savane-hero-image {
+  max-width: 45%;
+  border-radius: 10px;
 }
 
 .savane-item-text {
@@ -889,11 +941,10 @@ nav ul li a.current-page {
   width: 350px; 
 }
 
-.marais-item video {
-  width: 100%;
-  height: auto;
+.marais-hero-image {
+  max-width: 45%;
+  border-radius: 10px;
 }
-
 .marais-item-text {
   padding: 15px;
 }
@@ -955,9 +1006,9 @@ color: #fff;
   width: 350px; 
 }
 
-.ocean-item video {
-  width: 100%;
-  height: auto;
+.ocean-hero-image {
+  max-width: 45%;
+  border-radius: 10px;
 }
 
 .ocean-item-text {

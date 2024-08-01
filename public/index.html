@@ -25,9 +25,7 @@
 
   <main>
     <section class="hero">
-      <video autoplay muted loop class="hero-video">
-        <source src="./images/ARCADIA.mp4" type="video/mp4">
-      </video>
+      <img src="./images/ARCADIA.jpg" alt="Image" class="hero-image">
     </section>
 
     <section class="info-sections" id="info-sections">
@@ -72,15 +70,27 @@
       </div>
     </section>
 
+
     <section class="dynamic-content">
       <h2>Nos Animaux</h2>
-      <div class="dynamic-videos">
-        <video autoplay muted loop width= "100%" height="340" >
-          <source src="./images/arriere plan.mp4" type="video/mp4">
-        </video>
-      </div>
+      <div class="dynamic-animals">
+        <div class="animal-card" data-visible="true">
+          <img src="./images/elephant.jpg" alt="Éléphant">
+          <h3>Éléphant</h3>
+          <p>L'éléphant est le plus grand animal terrestre vivant. Il est connu pour son intelligence, sa mémoire et son comportement social complexe.</p>
+        </div>
+        <div class="animal-card" data-visible="true">
+          <img src="./images/lion.jpg" alt="Lion">
+          <h3>Lion</h3>
+          <p>Surnommé le roi de la jungle, le lion est un symbole de courage et de force. Les lions vivent en groupes appelés prides.</p>
+        </div>
+        <div class="animal-card" data-visible="true">
+          <img src="./images/geraldine.jpg" alt="Girafe">
+          <h3>Girafe</h3>
+          <p>La girafe est le plus grand mammifère terrestre et est facilement reconnaissable grâce à son long cou et ses pattes élancées.</p>
+        </div>
+      <button class="load-more">  <a href="./habitat.html" class="load-more">Voir Plus</a></button>
     </section>
-
 
     <section class="review-form-section">
       <h2>Laisser un Avis</h2>
@@ -94,7 +104,6 @@
         <button type="submit">Soumettre</button>
       </form>
     </section>
-
 
   </main>
 
