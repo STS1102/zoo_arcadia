@@ -3,13 +3,12 @@
   "builds": [
     {
       "src": "api/index.php",
-      "use": "@vercel/php",
+      "use": "vercel-php",
       "config": {
         "includeFiles": [
           "public/**",
           "src/**"
-        ],
-        "installCommand": "apt-get update && apt-get install -y libssl-dev"
+        ]
       }
     }
   ],
