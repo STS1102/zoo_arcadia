@@ -1,4 +1,1 @@
-<?php
-
-
-require '../public/index.php';
+<?php require "../public/index.php"; ?>
